@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kanishka Broadband</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">  
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Navbar CDN BT link--><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!--Navbar CDN JQ link--><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!--Navbar CDN BT link--><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+
+<style>
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family:Comic Sans MS;
+    background: #0c192c;
+    background-size: cover;
+    max-height: 400px;
+    overflow-y: hidden;
+}
+.bubbles{
+    position: relative;
+    display: flex;
+}
+.bubbles span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(280s/var(--i));
+}
+.bubbles span:nth-child(even){
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d75, 0 0 50px #ff2d7545, 0 0 70px #ff2d7545, 0 0 90px #ff2d75;
+
+}
+@keyframes animate{
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+    100%{
+        transform: translateY(-100vh) scale(0.2);
+    }
+}
+#a{
+    margin-top: 0px;
+    margin-left: 0px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Comic Sans MS;
+    font-size: 3rem;
+    padding: 10px;
+}
+.lgtext{
+    font-weight:070;
+    font-size:20px;
+    color: white;    
+    font-family: Comic Sans MS;
+
+}
+
+.lgtext:hover{
+    text-decoration: none;
+    color: red;
+}
+.navbar{
+    backface-visibility: initial;
+    background-image: url(logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000000;
+    font-family: 'Bitter', serif;
+}
+#a .logo{
+    height: 80px;
+}
+#a .logo:hover{
+    mix-blend-mode:lighten;
+}
+.icon-bar{
+    background-color: red;
+}
+li{
+    padding: 10px 10px;
+    font-size: 14px;
+}
+li a{
+    color: white;
+    font-family: Comic Sans MS;
+    font-size: 15px;
+}
+li a:hover{
+    color: red;
+    border-radius: 20px;
+}
+.nav{
+    padding: 10px;
+}
+
+@media (max-width:400px){
+    .bubbles span{
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(160s/var(--i));
+}
+}
+
+.sec1{
+    display:flex;
+}
+.name{
+    margin: 5px 60px;
+    max-width: fit-content;
+}
+.name .main{
+    font-size: 100px;
+    color: #fff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.name #sp{
+    font-size: 40px;
+    color: #aeaeae;
+    margin-left: 400px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    white-space: nowrap;
+}
+.name .text{
+    position: relative;
+    margin-bottom: 40px;
+    color: #fff;
+    width: 10ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(9) alternate infinite ;
+    font-size: 40px;
+}
+@keyframes typing {
+    0%{
+        width: 0ch;
+    }
+    50%{
+        width: 10ch;
+    }
+}
+
+.img img{
+    margin: 10px 30px;
+}
+.img{
+    animation: updown;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    transition: all .3s;
+}
+@keyframes updown{
+    0%{
+        transform: translateY(0px);
+    }
+    40%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+
+}
+@media (max-width:1000px){
+    body{
+        
+    overflow-y: scroll;
+    }
+    .sec1{
+        display:block;
+    }
+    .name .main{
+        font-size: 80px;
+    }
+    .name #sp{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:600px){
+    .img img {
+        width: 300px;
+        height: 300px;
+    }
+    .navbar{
+        padding:0px;
+    }
+    #a .logo{
+        height: 60px;
+    }
+    li{
+    padding: 0px 0px;
+    font-size: 14px;
+    }
+    #a{
+        margin-top: 0px;
+        margin-left: 0px;
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+        font-family: Comic Sans MS;
+        font-size: 2rem;
+        padding: 5px;
+    }
+    .sec1{
+    display:block;
+}
+    .name .text{
+        font-size:20px;
+    }
+    .name .main{
+        font-size: 50px;
+    }
+    .name #sp{
+        display: none;
+    }
+      }
+
+</style>
+</head>
+<body>
+
+    <div class="header">
+     
+    <nav class="navbar navbar-style">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#micon"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            <a id="a" href=""><img class="logo" src="logo.png">KANISHKA BROADBAND</a>
+          </div>
+          <div class="collapse navbar-collapse" id="micon">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="plan.html">Plans</a></li>
+              <li><a href="payment.html">Payment</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a  onclick="openM()">Meter</a></li>
+              <li><a href="about.html">About</a></li>
+          </ul>
+          </div>
+        </div>
+      </nav>
+    <section class="sec1">
+        
+        <div class="name">
+        <h3 class="text">Welcome to</h3>
+        <h1 class="main">KANISHKA<br>BROADBAND</h1>
+        <span id="sp">easy to surfing....</span>
+        </div>
+        <div class="img">
+            <img src="anim1.png" alt="">
+        </div>
+    </section>
+    <div class="bubbles">
+        <span style="--i:11;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:24;"></span>
+        
+        <span style="--i:10;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:23;"></span>
+        
+        <span style="--i:18;"></span>
+        <span style="--i:16;"></span>
+        <span style="--i:19;"></span>
+        
+        <span style="--i:20;"></span>
+        <span style="--i:22;"></span>
+        <span style="--i:25;"></span>
+    
+        <span style="--i:18;"></span>
+        <span style="--i:21;"></span>
+        <span style="--i:15;"></span>
+        
+        <span style="--i:13;"></span>
+        <span style="--i:26;"></span>
+        <span style="--i:17;"></span>
+        
+        <span style="--i:13;"></span>
+        <span style="--i:28;"></span>
+        <span style="--i:19;"></span>
+    
+        <span style="--i:15;"></span>
+        <span style="--i:30;"></span>
+        <span style="--i:21;"></span>
+    
+        <span style="--i:15;"></span>
+        <span style="--i:30;"></span>
+        <span style="--i:21;"></span>
+        
+        <span style="--i:15;"></span>
+        <span style="--i:20;"></span>
+        <span style="--i:21;"></span>
+    
+        <span style="--i:19;"></span>
+        <span style="--i:36;"></span>
+        <span style="--i:11;"></span>
+    
+        <span style="--i:11;"></span>
+        <span style="--i:30;"></span>
+        <span style="--i:27;"></span>
+        </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,423 @@
+<?php
+include("connection.php");
+error_reporting(0);
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Navbar CDN BT link--><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!--Navbar CDN JQ link--><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!--Navbar CDN BT link--><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--CSS Link--><link rel="stylesheet" href="ContactUs.css">
+    <!--Title icon link--><link rel="icon" type="image/x-icon" href="images/247logo.png">
+    <title>Group 24/7-Contact Us</title>
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar navbar-style">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#micon"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+              <a id="a" href="">KANISHKA BROADBAND</a>
+            </div>
+            <div class="collapse navbar-collapse" id="micon">
+              <ul class="nav navbar-nav navbar-right">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="plan.html">Plans</a></li>
+              <li><a href="payment.html">Payment</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a onclick="window.open('meter1.html','','width=500','height=500')">Meter</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+            </div>
+          </div>
+        </nav>
+        <!--Navbar END-->
+
+        <!--Forms-->
+        <div id="contact" class="container-fluid bg-grey">
+          <h2 class="text-center">Contact Us</h2><br><br>
+          <div class="row">
+            <div class="col-sm-5">
+              <p>Contact us and we'll get back to you within 24 hours.</p>
+              <p><span class="glyphicon glyphicon-map-marker"></span>  Jaydeep Shop no. 10,Kalwa West,Thane,Mumbai</p>
+              <p><span class="glyphicon glyphicon-phone"></span> +91 9594242427</p>
+              <p><span class="glyphicon glyphicon-envelope"></span> kanishkabroadband12@gmail.com</p>
+            </div>
+            <form action="https://formsubmit.co/3db559f1c05ee69b2d185c55661a3524" method="post">
+            <div class="col-sm-7 slideanim">
+              <div class="row">
+                <div class="col-sm-6 form-group">
+                  <input class="form-control" id="Name" name="Name" placeholder="Name" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                  <input class="form-control" id="Mail ID" name="Mail ID" placeholder="Email" type="email" required>
+                </div>
+              </div>
+              <textarea class="form-control" id="c1" name="Message" placeholder="Comment" rows="5"></textarea><br>
+              <div class="row">
+                <div class="col-sm-12 form-group">
+                  <button class="btn btn-default pull-right" type="submit">Send</button>
+                </div>
+              </div>
+            </div>
+            </form>
+          </div>
+        </div><br>
+        <div class="Gallery">
+          <h2 class="text-center">Need Help?</h2>
+        </div>
+        <!--Navbox-->
+        <section>
+        <div class="container">
+          <div class="outer">
+            <div class="inner">
+              <img src="chat.png" width="20px"><b>CHAT</b>
+              <p>Typical Reply time within seconds<button>Click Here</button><br>Monday-Friday 10pm-4pm IST</p>
+            </div><br>
+            <div class="inner">
+              <img src="faq.png" width="20px"><b>FAQ</b>
+              <p>Got questions? We've got answers<button>Click Here</button></p>
+            </div>
+          </div>
+        </div>
+        </section>
+        <!--Navbox end-->
+        <!--Footer-->
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single-box">
+                  <img src="logo.png" alt="G-24/7">
+                  <p><br>We, Group 24/7 Security Force, promise the secuirty of our clients at best terms. We are operating in Maharashtra and headquatered in Thane.</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single-box">
+                  <center>
+                    <h3>Services</h3>
+                  </center>
+                  <ul>
+                    <center>
+                      <li><a href="#">Security Equipment</a></li>
+                    </center>
+                    <center>
+                      <li><a href="#">Industrial Security</a></li>
+                    </center>
+                    <center>
+                      <li><a href="#">Residential Security</a></li>
+                    </center>
+                    <center>
+                      <li><a href="#">Hospitality Secuirty</a></li>
+                    </center>
+                    <center>
+                      <li><a href="#">Industrial Security</a></li>
+                    </center>
+                    <center>
+                      <li><a href="#">Logistics Security</a></li>
+                    </center>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single-box">
+                  <center>
+                    <h3>Checkout Links</h3>
+                  </center>
+                  <ul>
+                    <center>
+                      <li><a href="AboutUs.html">About Us</a></li>
+                    </center>
+                    <center>
+                      <li><a href="Career1.php">Career Development</a></li>
+                    </center>
+                    <center>
+                      <li><a href="Services1.php">Services</a></li>
+                    </center>
+                    <center>
+                      <li><a href="ContactUs1.php">Contact Us</a></li>
+                    </center>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single-box">
+                  <center>
+                    <h3>Follow us on</h3>
+                  </center>
+                  <p class="socials">
+                    <center><img src="Images/instalogo.png">
+                    <img src="images/fblogo.png">
+                    <img src="images/twitterlogo.png"></center>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer> 
+        <?php
+        $fullname=$_GET['n1'];
+        $email=$_GET['e1'];
+        $comment=$_GET['c1'];
+        $query="INSERT INTO contact VALUES('$fullname','$email','$comment')";
+        $data=mysqli_query($conn,$query);
+        ?>
+    </div>
+  </div>
+   </body>
+   <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Poppins&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color:rgb(255, 255, 255);    
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.header{
+    height:100vh;
+}
+#a{
+    margin-top: 0px;
+    margin-left: 40px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3rem;
+    padding: 10px;
+}
+.lgtext{
+    font-weight:070;
+    font-size:20px;
+    color: white;
+}
+.lgtext:hover{
+    text-decoration: none;
+    color: red;
+}
+.navbar-style{
+    box-shadow: 0 5px 10px #ffffff;
+    border:0px;
+    border-radius: 0px;
+}
+.navbar{
+    backface-visibility: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000000;
+    font-family: 'Bitter', serif;
+    padding: 10px;
+}
+.logo{
+    height: 60px;
+    padding: 2px 10px;
+    border-radius:25px;
+}
+.logo:hover{
+    mix-blend-mode:lighten;
+}
+.icon-bar{
+    background-color: red;
+}
+li{
+    padding: 0px 10px;
+    font-size: 14px;
+}
+li a{
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}
+li a:hover{
+    color: red;
+    border-radius: 20px;
+}
+.nav{
+    padding: 10px;
+}
+.text1{
+  font-size: 30px;
+  margin: 20px 0;
+  color :rgb(0, 0, 0);
+}
+.text2{
+  font-size: 31px;
+  margin: 20px 0;
+  color :rgb(255, 0, 0);
+}
+.text3{
+  font-size: 22px;
+  color: black;
+}
+a.btn{
+  margin: 20px;
+  width: 130px;
+  padding: 20px;
+  border-radius: 50px;
+  font-size: 16px;
+}
+a.btn-first{
+  position:relative;
+  top:50%;
+  background-color: black;
+  color:white;
+  text-emphasis: none;
+  text-align: center;
+}
+a.btn:hover{
+  background-color: white ;
+  color: red;  
+}
+section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.outer{
+  width: 500px;
+  height: 250px;
+  align-items: center;
+  margin: 0px 200px;
+  display: inline;
+  align-items: center;
+  justify-content: center;
+}
+.inner{
+  background: #CFD2CF;
+  height: 100px;
+  padding: 20px;
+  box-shadow: 12px 12px 22px 12px grey;
+}
+.outer button{
+  float: right;
+  background-color: #000000;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 5px;
+  margin-left: 20px;
+}
+.outer button:hover{
+  background-color: white;
+  color: red;
+  border: white;
+}
+.part1{
+background-color: #CFD2CF;
+margin-top: 100px;
+padding: 75px;
+margin-bottom: 100px;
+border-radius: 10px;
+box-shadow: 12px 12px 22px 12px grey;
+}
+.right-side .input-box {
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+  margin-top: 35px;
+}
+
+.right-side .input-box input,
+.right-side .input-box textarea {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #F0F1F8;
+  border-radius: 6px;
+  padding: 10px 14px;
+  resize: none;
+}
+.right-side .input-box textarea {
+  padding-top: 6px;
+  height: 85px;
+}
+h2{
+  font-weight:bolder;
+  position: relative;
+  margin: 10px 0px;
+  font-size: normal;
+}
+h2::before{
+  content: '';
+  position: absolute;
+  width:30px;
+  height: 1.5px;
+  background-color: rgb(255, 0, 0);
+  bottom:-10px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: animate 6s linear infinite;
+}
+@keyframes animate{
+  0%{
+      width: 30px;
+  }
+  25%{
+      width: 60px;
+  }
+  50%{
+      width: 90px;
+  }
+  75%{
+      width: 60px;
+  }
+  100%{
+      width: 30px;
+  }
+}
+footer{    
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	background: #000000;
+	padding: 38.4px 0;
+}
+.single-box img{
+	text-align: center;
+	padding: 10px 0;
+}
+.single-box p {
+	color: #ffffff;
+    font-size: 14px;
+}
+.single-box h3{
+	font-size: 20px;
+	font-weight: 700;
+	color: #fff;
+}
+.single-box .card-area i {
+	color: #ffffff;
+	font-size: 10px;
+	margin-right: 5px;
+}
+.single-box ul {
+	list-style: none;
+	padding: 0;
+    margin-right: 5px;
+}
+.single-box ul li a {
+	text-decoration: none;
+	color: #fff;
+	line-height: 2.5;
+	font-weight: 70;
+    font-size: 14px;
+}
+   </style>
+</html>
