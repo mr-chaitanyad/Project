@@ -12,6 +12,7 @@
     <!--Navbar CDN BT link--><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     
 
+
 <style>
 *{
     margin: 0px;
@@ -26,7 +27,6 @@ body{
     background: #0c192c;
     background-size: cover;
     max-height: 400px;
-    overflow-y: hidden;
 }
 .bubbles{
     position: relative;
@@ -127,7 +127,11 @@ li a:hover{
 }
 
 .sec1{
+    width: 70%;
     display:flex;
+    top: 0%;
+    left: 0%;
+    margin: 35px;
 }
 .name{
     margin: 5px 60px;
@@ -187,11 +191,11 @@ li a:hover{
 
 }
 @media (max-width:1000px){
-    body{
-        
+    body{   
     overflow-y: scroll;
     }
     .sec1{
+        width: 90%;
         display:block;
     }
     .name .main{
@@ -227,9 +231,10 @@ li a:hover{
         font-size: 2rem;
         padding: 5px;
     }
-    .sec1{
+    .sec1,.sec2,.sec3{
     display:block;
-}
+    margin: 25px;
+    }
     .name .text{
         font-size:20px;
     }
@@ -239,8 +244,168 @@ li a:hover{
     .name #sp{
         display: none;
     }
-      }
+}
+.part{
+    background-color:#DCDCDC;
+    width: 80%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+.card{
+    margin: 30px;
+    position: relative;
+    height: 300px;
+    width: 350px;
+}
 
+.card .ban{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;   
+}
+.card .banner1{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+.card .banner1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .banner2 {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3,35,54);
+    padding: 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+    text-align: center;
+}
+.card:hover .banner1{
+    transform: perspective(600px) rotateY(180deg);
+
+}
+.card:hover .banner2{
+    transform: perspective(600px) rotateY(360deg);
+}
+.text1{
+    font-size: 30px;
+    margin-top: 10px ;
+    color :rgb(0, 0, 0);
+}
+.text2{
+    font-size: 31px;
+    margin: 20px 0;
+    color :rgb(255, 0, 0);
+}
+.text3{
+    font-size: 22px;
+    color: black;
+}
+a.btn{
+    margin: 20px;
+    width: 130px;
+    padding: 20px;
+    border-radius: 50px;
+    font-size: 16px;
+}
+a.btn-first{
+    position:relative;
+    top:50%;
+    background-color: black;
+    color:white;
+    text-emphasis: none;
+    text-align: center;
+}
+a.btn:hover{
+    background-color:#ffffff ;
+    color: red; 
+}
+.sec3{
+    justify-content: center;
+    width:90%;
+    margin: 60px;
+    display: flex;
+}
+.sec2{
+    width:90%;
+    margin: 60px;
+    display: flex;
+}
+.info-container{
+    background-color:#DCDCDC;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    margin: 50px;
+    padding: 50px;
+}
+.info-container p{
+    font-size: 19px;
+    margin: 20px;
+}
+.info-container .vis,.mis,.ach{
+    display: block;
+    width: 360px;
+    height: 340px;
+
+}
+.info-container #head{
+    font-size: large;
+    align-items: center;
+    top: 0;
+    color: red;
+}
+@media screen and (max-width:767px){
+    
+    .sec1,.sec2,.sec3{
+    display:block;
+    margin: 25px;
+    }
+    .part{
+        width: 90%;
+        margin: 25px;
+    }
+    .card{
+        width: 80%;
+    }
+    .info-container{
+        width: 90%;
+        display: block;
+        margin: 25px;
+        padding: 10px;
+        height: 750px;
+    }
+    .info-container #head{
+        font-size:medium;
+    }
+    .info-container p{
+        font-size: 17px;
+        margin: 10px;
+    }
+    .info-container .vis,.mis,.ach{
+    display: block;
+    width: 360px;
+    height: 150px;
+    margin: 30px;
+    }
+    .info-container #head{
+    font-size: large;
+    align-items: center;
+    top: 0;
+    color: red;
+    }
+}
 </style>
 </head>
 <body>
@@ -266,8 +431,7 @@ li a:hover{
           </div>
         </div>
       </nav>
-    <section class="sec1">
-        
+    <div class="sec1">
         <div class="name">
         <h3 class="text">Welcome to</h3>
         <h1 class="main">KANISHKA<br>BROADBAND</h1>
@@ -276,7 +440,58 @@ li a:hover{
         <div class="img">
             <img src="anim1.png" alt="">
         </div>
-    </section>
+    </div>
+    <div class="sec2">
+        <div class="container part">
+            <div class="row part1">
+              <div class="col-sm-6 col-lg-6 col-md-6"><br><br><br><br>
+                <h1 class="text1">Welcome To</h1>
+                  <p class="text2">Kanishka Broadband</p>
+                <h3 class="text3">easy to surfing.....</h3>
+                  <a class="btn btn-first" href="Services.php">Services</a>
+                  <a class="btn btn-first" href="ContactUs.php">Contact Us</a>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-6">  
+                <div class="card">
+                <div class="ban banner1">
+                    <img src="photo.png" >
+                </div>
+                <div class="ban banner2"><h1>Vission</h1>
+                <p>Our vision is to be among the top internet service providers globally, providing reliable and affordable internet services to customers</p>
+                <h1>Mission</h1>
+                <p>To offer high-quality internet services with consistent connectivity, speed, and reliability. We aim to exceed customer expectations by delivering exceptional customer support, personalized service, and innovative technology</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="sec3">
+        <div class="info-container">
+            <div class="vis">
+            <b id="head">VISION:</b>
+                <br>
+                    <p>
+                    Our vision is to be among the top internet service providers globally, providing reliable and affordable internet services to customers.</p>
+            </div>
+            <div class="mis">
+            <b id="head">MISSION:</b>
+                <br>
+                    <p>
+                    To offer high-quality internet services with consistent connectivity, speed, and reliability. We aim to exceed customer expectations by delivering exceptional customer support, personalized service, and innovative technology </p>
+            </div>
+            <div class="ach">
+            <b id="head">ACHIEVEMENT:</b>
+            <br>
+            <p>
+            1. We have expanded our services to multiple locations, serving thousands of satisfied customers.
+            <br>
+            2. Our customer retention rate is consistently high due to our exceptional customer support and reliable internet services.<br>
+            3. We have introduced innovative and affordable internet plans to cater to the diverse needs of our customers.
+            <br>
+            </p>
+            </div>
+        </div>
+    </div>
     <div class="bubbles">
         <span style="--i:11;"></span>
         <span style="--i:12;"></span>
@@ -329,3 +544,23 @@ li a:hover{
 </div>
 </body>
 </html>
+<script>
+    var $card = $('.card');
+    var $banner1 = $('.card .banner1');
+    var $banner2 = $('.card .banner2');
+    
+    var $win = $(window);
+
+    $win.on('scroll', function(){
+        var top = $win.scrollTop();
+        if(top>=500){
+        $banner1.css('transform','perspective(600px) rotateY(180deg)');
+        $banner2.css('transform','perspective(600px) rotateY(360deg)');
+        }
+        if(top<=500){
+        $banner1.css('transform','perspective(600px) rotateY(360deg)');
+        $banner2.css('transform','perspective(600px) rotateY(180deg)');
+        }
+        
+    });
+</script>
