@@ -53,7 +53,7 @@ body{
         transform: translateY(100vh) scale(0);
     }
     100%{
-        transform: translateY(-100vh) scale(0.2);
+        transform: translateY(-400vh) scale(0.2);
     }
 }
 #a{
@@ -85,6 +85,7 @@ body{
     background-size: cover;
     background-color: #000000;
     font-family: 'Bitter', serif;
+    width: 100%;
 }
 #a .logo{
     height: 80px;
@@ -208,11 +209,12 @@ li a:hover{
 
 @media (max-width:600px){
     .img img {
-        width: 300px;
-        height: 300px;
+        width: 290px;
+        height: 290px;
     }
     .navbar{
         padding:0px;
+        width: 100%;
     }
     #a .logo{
         height: 60px;
@@ -236,10 +238,10 @@ li a:hover{
     margin: 25px;
     }
     .name .text{
-        font-size:20px;
+        font-size:17px;
     }
     .name .main{
-        font-size: 50px;
+        font-size: 47px;
     }
     .name #sp{
         display: none;
@@ -254,6 +256,8 @@ li a:hover{
     text-align: center;
     border-radius: 15px;
     margin-top: 50px;
+    height: 100%;
+    padding: 20px;
 }
 .card{
     margin: 30px;
@@ -283,7 +287,6 @@ li a:hover{
 .card .banner2 {
     transform: perspective(600px) rotateY(180deg);
     background: rgb(3,35,54);
-    padding: 15px;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -343,12 +346,13 @@ a.btn:hover{
 }
 .info-container{
     background-color:#DCDCDC;
-    width: 80%;
+    width: calc(50%-3rem);
     display: flex;
     align-items: center;
     border-radius: 15px;
     margin: 50px;
     padding: 50px;
+    height: 80%;
 }
 .info-container p{
     font-size: 19px;
@@ -357,7 +361,7 @@ a.btn:hover{
 .info-container .vis,.mis,.ach{
     display: block;
     width: 360px;
-    height: 340px;
+    height: calc(45%-3rem);
 
 }
 .info-container #head{
@@ -372,9 +376,17 @@ a.btn:hover{
     display:block;
     margin: 25px;
     }
+    .sec1{
+        margin: 30px;
+        align-items: center;
+    }
     .part{
         width: 90%;
         margin: 25px;
+        height: 100%;
+    }
+    .navbar,.nav{
+        width: 100%;
     }
     .card{
         width: 80%;
@@ -384,7 +396,7 @@ a.btn:hover{
         display: block;
         margin: 25px;
         padding: 10px;
-        height: 750px;
+        height: 100%;
     }
     .info-container #head{
         font-size:medium;
@@ -395,8 +407,8 @@ a.btn:hover{
     }
     .info-container .vis,.mis,.ach{
     display: block;
-    width: 360px;
-    height: 150px;
+    width: 80%;
+    height: 25%;
     margin: 30px;
     }
     .info-container #head{
@@ -456,10 +468,9 @@ a.btn:hover{
                 <div class="ban banner1">
                     <img src="photo.png" >
                 </div>
-                <div class="ban banner2"><h1>Vission</h1>
-                <p>Our vision is to be among the top internet service providers globally, providing reliable and affordable internet services to customers</p>
-                <h1>Mission</h1>
-                <p>To offer high-quality internet services with consistent connectivity, speed, and reliability. We aim to exceed customer expectations by delivering exceptional customer support, personalized service, and innovative technology</p></div>
+                <div class="ban banner2"> 
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.3782830552277!2d73.02000907498008!3d19.178673182047124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bf71c92f5edb%3A0x7590424ba2ed2048!2sMumbai%20-%20Pune%20Rd%2C%20Narayan%20Nagar%2C%20Mumbra%2C%20Thane%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1705221312749!5m2!1sen!2sin" width="1450" height="450" style="border:2;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
                 </div>
               </div>
             </div>
