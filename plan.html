@@ -10,7 +10,8 @@
     <!--Navbar CDN BT link--><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div class="header">
+  
+<div class="header">
         <nav class="navbar navbar-style">
           <div class="container-fluid">
             <div class="navbar-header">
@@ -32,22 +33,23 @@
         </nav>
         <!--Navbar END-->
     <!-- slider section start -->
+    
 <div class="slider">
     <div class="list">
         <div class="item" width=100%>
-            <img src="img1.jpeg" width="100%" alt="">
+            <img src="banner4.jpeg" width="100%" alt="">
         </div>
         <div class="item">
-            <img src="img2.jpeg" width="100%" alt="">
+            <img src="banner2.jpeg" width="100%" alt="">
         </div>
         <div class="item">
-            <img src="img3.jpeg" width="100%" alt="">
+            <img src="banner3.jpeg" width="100%" alt="">
         </div>
         <div class="item">
-          <img src="img1.jpeg" width="100%" alt="">
+          <img src="banner1.jpeg" width="100%" alt="">
       </div>
       <div class="item">
-          <img src="img2.jpeg" width="100%" alt="">
+          <img src="banner2.jpeg" width="100%" alt="">
       </div>
     </div>
     <div class="buttons">
@@ -79,15 +81,15 @@
             <a href="#" class="fas fa-eye"></a>
         </div>
         <img src="pr1.jpeg" alt="">
-        <h3>latest plants</h3>
+        <h3>latest plan</h3>
         
         <div class="quantity">
-            <span> quantity : </span>
-            <input type="number" min="1" max="100" value="1">
+            <span>Plan ID: </span>
+            <input type="number" min="1" disabled  max="100" value="10001">
         </div>
         <div class="price">₹599 <span>+GST</span></div>
         <a class="btn" onclick="viewP(1,'10','10')">View</a>
-        <a class="btn">Buy</a>
+        <a class="btn" onclick="buy(1,'#10001')">Buy</a>
         
       </li>
 
@@ -99,15 +101,15 @@
             <a href="#" class="fas fa-eye"></a>
         </div>
         <img src="pr2.jpeg" alt="">
-        <h3>latest plants</h3>
+        <h3>latest plan</h3>
         
         <div class="quantity">
-            <span> quantity : </span>
-            <input type="number" min="1" max="100" value="1">
+            <span>Plan ID: </span>
+            <input type="number" min="1" disabled  max="100" value="10002">
         </div>
         <div class="price">₹449<span>+GST</span></div>
         <a href="#" class="btn" onclick="viewP(2,'25','15')">View</a>
-        <a href="#" class="btn">Buy</a>
+        <a href="#" class="btn" onclick="buy(2,'#10002')">Buy</a>
       </li>
 
     <li class="box">
@@ -118,15 +120,15 @@
             <a href="#" class="fas fa-eye"></a>
         </div>
         <img src="pr3.jpeg" alt="">
-        <h3>latest plants</h3>
+        <h3>latest plan</h3>
         
         <div class="quantity">
-            <span> quantity : </span>
-            <input type="number" min="1" max="100" value="1">
+            <span>Plan ID:</span>
+            <input type="number" min="1" disabled  max="100" value="10003">
         </div>
         <div class="price">₹499 <span>+GST</span></div>
         <a href="#" class="btn" onclick="viewP(3,'30','15')">View</a>
-        <a href="#" class="btn">Buy</a>
+        <a href="#" class="btn" onclick="buy(3,'#10003')">Buy</a>
       </li>
 
     <li class="box">
@@ -137,15 +139,15 @@
             <a href="#" class="fas fa-eye"></a>
         </div>
         <img src="pr4.jpeg" alt="">
-        <h3>latest plants</h3>
+        <h3>latest plan</h3>
         
         <div class="quantity">
-            <span> quantity : </span>
-            <input type="number" min="1" max="100" value="1">
+            <span>Plan ID:</span>
+            <input type="number" min="1" disabled  max="100" value="10004">
         </div>
         <div class="price">₹799<span>+GST</span></div>
         <a href="#" class="btn" onclick="viewP(4,'50','15')">View</a>
-        <a href="#" class="btn">Buy</a>
+        <a href="#" class="btn" onclick="buy(4,'#10004')">Buy</a>
       </li>
 
     <li class="box">
@@ -156,15 +158,15 @@
             <a href="#" class="fas fa-eye"></a>
         </div>
         <img src="pr5.jpeg" alt="">
-        <h3>latest plants</h3>
+        <h3>latest plan</h3>
         
         <div class="quantity">
-            <span> quantity : </span>
-            <input type="number" min="1" max="100" value="1">
+            <span>Plan ID: </span>
+            <input type="number" min="1" disabled  max="100" value="10005">
         </div>
         <div class="price">₹649<span>+GST</span></div>
         <a href="#" class="btn" onclick="viewP(5,'100','20')">View</a>
-        <a href="#" class="btn">Buy</a>
+        <a href="#" class="btn" onclick="buy(5,'#10005')">Buy</a>
       </li>
 
     <li class="box">
@@ -175,15 +177,15 @@
             <a href="#" class="fas fa-eye"></a>
         </div>
         <img src="pr6.jpeg" alt="">
-        <h3>latest plants</h3>
+        <h3>latest plan</h3>
         
         <div class="quantity">
-            <span> quantity : </span>
-            <input type="number" min="1" max="100" value="1">
+            <span>Plan ID: </span>
+            <input type="number" min="1" disabled  max="100" value="10006">
         </div>
         <div class="price">₹699 <span>+GST</span></div>
         <a href="#" class="btn" onclick="viewP(6,'200','20')">View</a>
-        <a href="#" class="btn">Buy</a>
+        <a href="#" class="btn" onclick="buy(6,'#10006')">Buy</a>
       </li>
 
     </ul>
@@ -230,6 +232,73 @@
         </ul>
     
     </section>
+    
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div id="single-box" class="single-box">
+                <img src="logo.png" alt="kanisha service">
+                <p><br>KANISHKA BROADBAND service,currently operating in Kalwa.
+                   <br>We provide customized internet service to the users at kalwa.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="single-box">
+            <center>
+              <h3>Social Media</h3>
+            </center>
+            <ul>
+            <center>
+              <li><a href="#">Instagram</a></li>
+            </center>
+            <center>
+              <li><a href="#">Facebook</a></li>
+            </center>
+            <center>
+              <li><a href="#">www.kanishkabroadband.com</a></li>
+            </center>
+            <center>
+              <li><a href="http:wa.me/+919594242427">Whatsapp</a></li>
+            </center>
+            </ul>
+          </div>
+        </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="single-box">
+                <center>
+                  <h3>Checkout Links</h3>
+                </center>
+                <ul>
+                <center>
+                    <li><a href="plan.html">Plans</a></li>
+                </center>
+                <center>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </center>
+                <center>
+                    <li><a href="#about">About</a></li>
+                </center>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="single-box">
+                <center>
+                  <h3>Reach Us</h3>
+                </center>
+              <ul>
+              <center>
+                <li><a href=""><span class="glyphicon glyphicon-map-marker"></span> Kalwa,Thane(W)-400605</a></li>
+                <li><a href="tel:+919594242427"><span class="glyphicon glyphicon-phone"></span>+91 9594242427</a></li>
+                <li><a href="mailto:kanishkabroadband12@gmail.com"><span class="glyphicon glyphicon-envelope"></span> kanishkabroadband12@gmail.com</a></li>
+              </center>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 </div>
     
     <!-- category section ends -->
@@ -325,11 +394,13 @@ color: #fff;
 }
 
 .slider{
-    width: 100%;
-    height: 300px;
-    margin-top: -10px;
+    width: 90%;
+    height: 400px;
+    margin: 60px;
     position: relative;
     overflow: hidden;
+    border-radius: 2rem;
+    display: flex;
 }
 .slider .list{
     position: absolute;
@@ -390,10 +461,11 @@ color: #fff;
 @media screen and (max-width: 768px){
     
 .slider{
-    width: 100%;
+    width: 95%;
     height: 300px;
     position: relative;
     overflow: hidden;
+    margin: 20px;
 }
 .slider .list{
     position: absolute;
@@ -628,7 +700,6 @@ border-radius: 92px;
   border-radius: 2rem;
 }
 
-
 @media (max-width:1200px){
 
 html{
@@ -639,19 +710,6 @@ html{
 
 @media (max-width:991px){
 
-.header-1{
-  padding:2rem;
-}
-.header-1 h4{
-  display: none;
-}
-.header-1 .share ul{
-  float: left;
-  margin-left: 10px;
-  margin-top: 15px;
-  padding: 0;
-  display: flex;
-}
 
 .product{
     margin-top:calc(100%-1000px);
@@ -661,7 +719,7 @@ section{
 }
 }
 
-@media (max-width:808px){
+@media (max-width:767px){
 .product .box-container .box{
   overflow: hidden;
   border:.1rem solid rgba(0,0,0,.3);
@@ -681,10 +739,25 @@ section{
   width: 40%;
   border-radius: 1rem;
 }
+#single-box{
+        display: flex;
+    }
+    .container .single-box img{
+    justify-self: first baseline;
+	  padding: 10px 0;
+    width: 150px;
+    height: 150px;
+    }
+    .single-box p {
+	color: #ffffff;
+    font-size: 14px;
+    align-self: center;
+    width: 300px;
+}
 
 }
 
-@media (max-width:600px){
+@media (max-width:767px){
   .navbar{
     padding:0px;
   }
@@ -711,6 +784,46 @@ section{
     padding:0px;
   }
 }
+
+
+footer {
+    font-family: Comic Sans MS;
+	background: #000000;
+	padding: 38.4px 0;
+}
+.single-box img{
+	text-align: center;
+	padding: 10px 0;
+    width: 200px;
+    height: 200px;
+}
+.single-box p {
+	color: #ffffff;
+    font-size: 14px;
+}
+.single-box h3{
+	font-size: 20px;
+	font-weight: 700;
+	color: #fff;
+}
+.single-box .card-area i {
+	color: #ffffff;
+	font-size: 10px;
+	margin-right: 5px;
+}
+.single-box ul {
+	list-style: none;
+	padding: 0;
+    margin-right: 5px;
+}
+.single-box ul li a {
+	text-decoration: none;
+	color: #fff;
+	line-height: 2.5;
+	font-weight: 70;
+    font-size: 14px;
+}
+
     </style>
 
     <script>
@@ -787,6 +900,183 @@ function viewP(val,a,b)
   w6.document.write(`<html><head><link rel='stylesheet' href='viewStyle.css'></head><body><div class='box'><span class='discount'>30 Mbps + 13 OTT APPS</span><div class='icons'><a href='#'' class='fas fa-heart'></a><a href='#' class='fas fa-share'></a> <a href='#' class='fas fa-eye'></a> </div><div class='table'><table border='1'><tr><th>Plan Validity</th> <th> Bill Cycle</th></tr> <tr><td>Speed</td><td> ${a} Mbps (Upload & Download)</td></tr><tr><td>Data</td> <td>Unlimited</td></tr><tr><td>Voice</td><td>Free</td></tr><tr>  <td>On-demand TV</td><td>${b}+ TV Channels</td> </tr></table></div> <div class='stars'><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='far fa-star'></i></div><div class='note'><h6> Note:<li>Commercial usage policy applicable on all unlimited plan</li><li>GST additional on applicable components</li> </h6> </div><a href='' class='btn'>Buy</a></div></body></html>`);
   }
 }
+function buy(val,id)
+{
+  if(val==1){
+  w1 = window.open('','buy','width=500,height=600');
+  w1.document.write(`<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='buy.css'>
+</head>
+<body>
+    <h1>Request to Add plan</h1>
+    <form action="submit_message.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
+        <label for="email">Plan ID:</label>
+        <input type="email" id="email" value=${id} disabled=true name="email" required>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" value="Add Plan" disabled=true  name="subject">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <input type="submit" value="Send Message">
+    </form>
+</body>
+</html>`);
+  }
+  if(val==2){
+  w2 = window.open('','buy','width=500,height=600');
+  w2.document.write(`<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='buy.css'>
+</head>
+<body>
+    <h1>Request to Add plan</h1>
+    <form action="submit_message.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Plan ID:</label>
+        <input type="email" id="email" value=${id} disabled=true name="email" required>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" value="Add Plan" disabled=true name="subject">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <input type="submit" value="Send Message">
+    </form>
+</body>
+</html>`);
+  }
+  if(val==3){
+  w3 = window.open('','buy','width=500,height=600');
+  w3.document.write(`<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='buy.css'>
+</head>
+<body>
+    <h1>Request to Add plan</h1>
+    <form action="submit_message.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Plan ID:</label>
+        <input type="email" id="email" value=${id} disabled=true name="email" required>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" value="Add Plan" disabled=true name="subject">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <input type="submit" value="Send Message">
+    </form>
+</body>
+</html>`);
+  }
+  if(val==4){
+  w4 = window.open('','buy','width=500,height=600');
+  w4.document.write(`<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='buy.css'>
+    <title>Contact Us</title>
+</head>
+<body>
+    <h1>Request to Add plan</h1>
+    <form action="submit_message.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Plan ID:</label>
+        <input type="email" id="email" value=${id} disabled=true name="email" required>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" value="Add Plan" disabled=true name="subject">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <input type="submit" value="Send Message">
+    </form>
+</body>
+</html>`);
+  }
+  if(val==5){
+  w5 = window.open('','buy','width=500,height=600');
+  w5.document.write(`<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='buy.css'>
+</head>
+<body>
+    <h1>Request to Add plan</h1>
+    <form action="submit_message.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Plan ID:</label>
+        <input type="email" id="email" value=${id} disabled=true name="email" required>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" value="Add Plan" disabled=true name="subject">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <input type="submit" value="Send Message">
+    </form>
+</body>
+</html>`);
+  }
+  if(val==6){
+  w6 = window.open('','buy','width=500,height=600');
+  w6.document.write(`<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='buy.css'>
+</head>
+<body>
+    <h1>Request to Add plan</h1>
+    <form action="submit_message.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Plan ID:</label>
+        <input type="email" id="email" value=${id} disabled=true name="email" required>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" value="Add Plan" disabled=true name="subject">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <input type="submit" value="Send Message">
+    </form>
+</body>
+</html>`);
+  }
+}
     </script>
     </html>

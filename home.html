@@ -21,40 +21,13 @@
 }
 html{
     scroll-behavior: smooth;
+    height: 500px;
 }
 body{
     font-family:Comic Sans MS;
     background: #0c192c;
     background-size: cover;
     max-height: 400px;
-}
-.bubbles{
-    position: relative;
-    display: flex;
-}
-.bubbles span{
-    position: relative;
-    width: 30px;
-    height: 30px;
-    background: #4fc3dc;
-    margin: 0 4px;
-    border-radius: 50%;
-    box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
-    animation: animate 15s linear infinite;
-    animation-duration: calc(280s/var(--i));
-}
-.bubbles span:nth-child(even){
-    background: #ff2d75;
-    box-shadow: 0 0 0 10px #ff2d75, 0 0 50px #ff2d7545, 0 0 70px #ff2d7545, 0 0 90px #ff2d75;
-
-}
-@keyframes animate{
-    0%{
-        transform: translateY(100vh) scale(0);
-    }
-    100%{
-        transform: translateY(-400vh) scale(0.2);
-    }
 }
 #a{
     margin-top: 0px;
@@ -88,7 +61,7 @@ body{
     width: 100%;
 }
 #a .logo{
-    height: 80px;
+    height: 60px;
 }
 #a .logo:hover{
     mix-blend-mode:lighten;
@@ -113,26 +86,12 @@ li a:hover{
     padding: 10px;
 }
 
-@media (max-width:400px){
-    .bubbles span{
-    position: relative;
-    width: 10px;
-    height: 10px;
-    background: #4fc3dc;
-    margin: 0 4px;
-    border-radius: 50%;
-    box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
-    animation: animate 15s linear infinite;
-    animation-duration: calc(160s/var(--i));
-}
-}
 
 .sec1{
-    width: 70%;
     display:flex;
-    top: 0%;
-    left: 0%;
     margin: 35px;
+    justify-content: center;
+    width: 90%;
 }
 .name{
     margin: 5px 60px;
@@ -233,7 +192,7 @@ li a:hover{
         font-size: 2rem;
         padding: 5px;
     }
-    .sec1,.sec2,.sec3{
+    .sec1{
     display:block;
     margin: 25px;
     }
@@ -249,15 +208,18 @@ li a:hover{
 }
 .part{
     background-color:#DCDCDC;
-    width: 80%;
     display: block;
     justify-content: center;
     align-items: center;
     text-align: center;
     border-radius: 15px;
-    margin-top: 50px;
+
     height: 100%;
     padding: 20px;
+    
+    width: 90%;
+    margin: 60px;
+    display: flex;
 }
 .card{
     margin: 30px;
@@ -274,6 +236,7 @@ li a:hover{
     border-radius: 10px;
     overflow: hidden;
     transition: .5s;   
+    margin: 10px;
 }
 .card .banner1{
     transform: perspective(600px) rotateY(0deg);
@@ -333,24 +296,20 @@ a.btn:hover{
     background-color:#ffffff ;
     color: red; 
 }
-.sec3{
-    justify-content: center;
-    width:90%;
-    margin: 60px;
-    display: flex;
+.sec1{
+    width: 90%;
+
 }
-.sec2{
-    width:90%;
-    margin: 60px;
-    display: flex;
-}
+
+
 .info-container{
     background-color:#DCDCDC;
-    width: calc(50%-3rem);
+    width: 90%;
     display: flex;
+    justify-content: center;
     align-items: center;
     border-radius: 15px;
-    margin: 50px;
+    margin: 60px;
     padding: 50px;
     height: 80%;
 }
@@ -370,16 +329,48 @@ a.btn:hover{
     top: 0;
     color: red;
 }
+
+footer {
+    font-family: Comic Sans MS;
+	background: #000000;
+	padding: 38.4px 0;
+}
+.single-box img{
+	text-align: center;
+	padding: 10px 0;
+    width: 200px;
+    height: 200px;
+}
+.single-box p {
+	color: #ffffff;
+    font-size: 14px;
+}
+.single-box h3{
+	font-size: 20px;
+	font-weight: 700;
+	color: #fff;
+}
+.single-box .card-area i {
+	color: #ffffff;
+	font-size: 10px;
+	margin-right: 5px;
+}
+.single-box ul {
+	list-style: none;
+	padding: 0;
+    margin-right: 5px;
+}
+.single-box ul li a {
+	text-decoration: none;
+	color: #fff;
+	line-height: 2.5;
+	font-weight: 70;
+    font-size: 14px;
+}
+
+
 @media screen and (max-width:767px){
     
-    .sec1,.sec2,.sec3{
-    display:block;
-    margin: 25px;
-    }
-    .sec1{
-        margin: 30px;
-        align-items: center;
-    }
     .part{
         width: 90%;
         margin: 25px;
@@ -417,7 +408,25 @@ a.btn:hover{
     top: 0;
     color: red;
     }
+    #single-box{
+        display: flex;
+    }
+    .single-box img
+    {
+    justify-self: first baseline;
+	padding: 10px 0;
+    width: 150px;
+    height: 150px;
+    }
+    .single-box p {
+	color: #ffffff;
+    font-size: 14px;
+    align-self: center;
+    width: 300px;
 }
+
+}
+
 </style>
 </head>
 <body>
@@ -453,7 +462,6 @@ a.btn:hover{
             <img src="anim1.png" alt="">
         </div>
     </div>
-    <div class="sec2">
         <div class="container part">
             <div class="row part1">
               <div class="col-sm-6 col-lg-6 col-md-6"><br><br><br><br>
@@ -475,8 +483,6 @@ a.btn:hover{
               </div>
             </div>
           </div>
-    </div>
-    <div class="sec3">
         <div class="info-container">
             <div class="vis">
             <b id="head">VISION:</b>
@@ -502,56 +508,73 @@ a.btn:hover{
             </p>
             </div>
         </div>
-    </div>
-    <div class="bubbles">
-        <span style="--i:11;"></span>
-        <span style="--i:12;"></span>
-        <span style="--i:24;"></span>
-        
-        <span style="--i:10;"></span>
-        <span style="--i:14;"></span>
-        <span style="--i:23;"></span>
-        
-        <span style="--i:18;"></span>
-        <span style="--i:16;"></span>
-        <span style="--i:19;"></span>
-        
-        <span style="--i:20;"></span>
-        <span style="--i:22;"></span>
-        <span style="--i:25;"></span>
     
-        <span style="--i:18;"></span>
-        <span style="--i:21;"></span>
-        <span style="--i:15;"></span>
-        
-        <span style="--i:13;"></span>
-        <span style="--i:26;"></span>
-        <span style="--i:17;"></span>
-        
-        <span style="--i:13;"></span>
-        <span style="--i:28;"></span>
-        <span style="--i:19;"></span>
-    
-        <span style="--i:15;"></span>
-        <span style="--i:30;"></span>
-        <span style="--i:21;"></span>
-    
-        <span style="--i:15;"></span>
-        <span style="--i:30;"></span>
-        <span style="--i:21;"></span>
-        
-        <span style="--i:15;"></span>
-        <span style="--i:20;"></span>
-        <span style="--i:21;"></span>
-    
-        <span style="--i:19;"></span>
-        <span style="--i:36;"></span>
-        <span style="--i:11;"></span>
-    
-        <span style="--i:11;"></span>
-        <span style="--i:30;"></span>
-        <span style="--i:27;"></span>
-        </div>
+        <footer>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div id="single-box" class="single-box">
+                      <img src="logo.png" alt="kanisha service">
+                      <p><br>KANISHKA BROADBAND service,currently operating in Kalwa.
+                         <br>We provide customized internet service to the users at kalwa.</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div class="single-box">
+                  <center>
+                    <h3>Social Media</h3>
+                  </center>
+                  <ul>
+                  <center>
+                    <li><a href="#">Instagram</a></li>
+                  </center>
+                  <center>
+                    <li><a href="#">Facebook</a></li>
+                  </center>
+                  <center>
+                    <li><a href="#">www.kanishkabroadband.com</a></li>
+                  </center>
+                  <center>
+                    <li><a href="http:wa.me/+919594242427">Whatsapp</a></li>
+                  </center>
+                  </ul>
+                </div>
+              </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-box">
+                      <center>
+                        <h3>Checkout Links</h3>
+                      </center>
+                      <ul>
+                      <center>
+                          <li><a href="plan.html">Plans</a></li>
+                      </center>
+                      <center>
+                          <li><a href="contact.html">Contact Us</a></li>
+                      </center>
+                      <center>
+                          <li><a href="#about">About</a></li>
+                      </center>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-box">
+                      <center>
+                        <h3>Reach Us</h3>
+                      </center>
+                    <ul>
+                    <center>
+                      <li><a href=""><span class="glyphicon glyphicon-map-marker"></span> Kalwa,Thane(W)-400605</a></li>
+                      <li><a href="tel:+919594242427"><span class="glyphicon glyphicon-phone"></span>+91 9594242427</a></li>
+                      <li><a href="mailto:kanishkabroadband12@gmail.com"><span class="glyphicon glyphicon-envelope"></span> kanishkabroadband12@gmail.com</a></li>
+                    </center>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
 </div>
 </body>
 </html>
