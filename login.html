@@ -101,7 +101,7 @@ form input[type="password"],form input[type="text"]{
     align-items: center;
     margin-top: 2.5rem;
 }
-form input[type="button"]{
+form input[type="submit"]{
     background :linear-gradient(135deg, #fbd15d, #0000FF );
     color: white;
     padding: 0.5rem 1.3rem;
@@ -127,7 +127,7 @@ form input:focus{
     font-size: 1rem;
     padding: 0.5rem 0.7rem;
 }
-form input[type="button"]:hover{
+form input[type="submit"]:hover{
 border:none;
 }
 
@@ -178,16 +178,14 @@ border:none;
         <div class="text-box">
             <h1>Kanishka<br>Broadband<h1>
         </div>
-        
-        
         <header>
             <div class="container">
                 <h1>Login</h1>
                 <div class="left">
                     <div class="g-form">
-                        <form>
+                        <form method="post" action="">
                             <div id="uname">
-                            <input type="email" id="t1" name="" placeholder="Username">
+                            <input type="text" id="t1" name="uname" placeholder="Username">
                                 <label>
                                     @gmail.com
                                 </label>
@@ -198,7 +196,7 @@ border:none;
                             <br>
                             <br>
                             <a href="#" >Use my cuurent email address instead</a>
-                            <input type="password" id="t2" name="" placeholder="Password"
+                            <input type="password" id="t2" name="pass" placeholder="Password"
                             required id="pwrd">
                             <span>
                                 Use 8 or more character with a mix of letters, numbers & symbols.
@@ -208,7 +206,7 @@ border:none;
                             &nbsp;Show password
                             <div class="b-links">
                                 <a href="sign.html">Sign in instead</a>
-                                <input type="button" onclick="validate()" id="next" value="Next">
+                                <input type="submit" onclick="validate()" id="next" value="Next">
                             </div>
                         </form>
                     </div>
@@ -223,28 +221,5 @@ border:none;
 
         </header>     
     </body>
-<script>
-function show()
-{
- if(document.getElementById("c1").checked)
-{
-document.getElementById("t2").type = "text";
-}
 
-}
-function validate()
-{
- v1 = document.getElementById("t1").value;
- v2 = document.getElementById("t2").value;
- reg1 = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
- reg2 = /^[a-zA-Z0-9!@#$%^&*]{6,16}$/;
-if(reg1.test(v1) && reg2.test(v2))
-{
-alert("Submit");
-}
-else{
-alert("Re-enter");
-}
-}
-</script>
 </html>
