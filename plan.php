@@ -1,4 +1,6 @@
-
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +12,6 @@
     <!--Navbar CDN BT link--><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-  
 <div class="header">
         <nav class="navbar navbar-style">
           <div class="container-fluid">
@@ -20,13 +21,13 @@
             </div>
             <div class="collapse navbar-collapse" id="micon">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="home.html">Home</a></li>
-              <li><a href="login.html">Login</a></li>
-              <li><a href="plan.html">Plans</a></li>
+                <li><a href="home.php">Home</a></li>
+              <li><a href="login.php">Login</a></li>
+              <li><a href="plan.php">Plans</a></li>
               <li><a href="payment.html">Payment</a></li>
               <li><a href="contact.html">Contact</a></li>
               <li><a  onclick="openM()">Meter</a></li>
-              <li><a href="about.html">About</a></li>
+              <li><a href="profile.php">Profile</a></li>
             </ul>
             </div>
           </div>
@@ -915,7 +916,7 @@ function buy(val,id)
     <h1>Request to Add plan</h1>
     <form action="submit_message.php" method="post">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="name"  value="<?php if(isset($_SESSION['uname']))echo $_SESSION['uname']; else exit();?>" required>
 
         <label for="email">Plan ID:</label>
         <input type="email" id="email" value=${id} disabled=true name="email" required>
@@ -944,13 +945,13 @@ function buy(val,id)
     <h1>Request to Add plan</h1>
     <form action="submit_message.php" method="post">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="name"  value="<?php if(isset($_SESSION['uname']))echo $_SESSION['uname']; else exit();?>" required>
 
         <label for="email">Plan ID:</label>
         <input type="email" id="email" value=${id} disabled=true name="email" required>
 
         <label for="subject">Subject:</label>
-        <input type="text" id="subject" value="Add Plan" disabled=true name="subject">
+        <input type="text" id="subject" value="Add Plan" disabled=true  name="subject">
 
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="4" required></textarea>
@@ -973,13 +974,13 @@ function buy(val,id)
     <h1>Request to Add plan</h1>
     <form action="submit_message.php" method="post">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="name"  value="<?php if(isset($_SESSION['uname']))echo $_SESSION['uname']; else exit();?>" required>
 
         <label for="email">Plan ID:</label>
         <input type="email" id="email" value=${id} disabled=true name="email" required>
 
         <label for="subject">Subject:</label>
-        <input type="text" id="subject" value="Add Plan" disabled=true name="subject">
+        <input type="text" id="subject" value="Add Plan" disabled=true  name="subject">
 
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="4" required></textarea>
@@ -997,19 +998,18 @@ function buy(val,id)
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='buy.css'>
-    <title>Contact Us</title>
 </head>
 <body>
     <h1>Request to Add plan</h1>
     <form action="submit_message.php" method="post">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="name"  value="<?php if(isset($_SESSION['uname']))echo $_SESSION['uname']; else exit();?>" required>
 
         <label for="email">Plan ID:</label>
         <input type="email" id="email" value=${id} disabled=true name="email" required>
 
         <label for="subject">Subject:</label>
-        <input type="text" id="subject" value="Add Plan" disabled=true name="subject">
+        <input type="text" id="subject" value="Add Plan" disabled=true  name="subject">
 
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="4" required></textarea>
@@ -1032,13 +1032,13 @@ function buy(val,id)
     <h1>Request to Add plan</h1>
     <form action="submit_message.php" method="post">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="name"  value="<?php if(isset($_SESSION['uname']))echo $_SESSION['uname']; else exit();?>" required>
 
         <label for="email">Plan ID:</label>
         <input type="email" id="email" value=${id} disabled=true name="email" required>
 
         <label for="subject">Subject:</label>
-        <input type="text" id="subject" value="Add Plan" disabled=true name="subject">
+        <input type="text" id="subject" value="Add Plan" disabled=true  name="subject">
 
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="4" required></textarea>
@@ -1061,13 +1061,13 @@ function buy(val,id)
     <h1>Request to Add plan</h1>
     <form action="submit_message.php" method="post">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="name"  value="<?php if(isset($_SESSION['uname']))echo $_SESSION['uname']; else exit();?>" required>
 
         <label for="email">Plan ID:</label>
         <input type="email" id="email" value=${id} disabled=true name="email" required>
 
         <label for="subject">Subject:</label>
-        <input type="text" id="subject" value="Add Plan" disabled=true name="subject">
+        <input type="text" id="subject" value="Add Plan" disabled=true  name="subject">
 
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="4" required></textarea>

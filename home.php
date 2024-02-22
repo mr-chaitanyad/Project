@@ -1,19 +1,17 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Kanishka Broadband</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">  
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Navbar CDN BT link--><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <!--Navbar CDN JQ link--><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <!--Navbar CDN BT link--><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    
-
-
-<style>
+    <style>
 *{
     margin: 0px;
     padding: 0px;
@@ -44,9 +42,7 @@ body{
     font-size:20px;
     color: white;    
     font-family: Comic Sans MS;
-
 }
-
 .lgtext:hover{
     text-decoration: none;
     color: red;
@@ -85,8 +81,6 @@ li a:hover{
 .nav{
     padding: 10px;
 }
-
-
 .sec1{
     display:flex;
     margin: 35px;
@@ -127,7 +121,6 @@ li a:hover{
         width: 10ch;
     }
 }
-
 .img img{
     margin: 10px 30px;
 }
@@ -148,7 +141,6 @@ li a:hover{
     100%{
         transform: translateY(0px);
     }
-
 }
 @media (max-width:1000px){
     body{   
@@ -165,7 +157,6 @@ li a:hover{
         font-size: 20px;
     }
 }
-
 @media (max-width:600px){
     .img img {
         width: 290px;
@@ -227,7 +218,6 @@ li a:hover{
     height: 300px;
     width: 350px;
 }
-
 .card .ban{
     position: absolute;
     width: 100%;
@@ -300,8 +290,6 @@ a.btn:hover{
     width: 90%;
 
 }
-
-
 .info-container{
     background-color:#DCDCDC;
     width: 90%;
@@ -329,7 +317,6 @@ a.btn:hover{
     top: 0;
     color: red;
 }
-
 footer {
     font-family: Comic Sans MS;
 	background: #000000;
@@ -367,8 +354,6 @@ footer {
 	font-weight: 70;
     font-size: 14px;
 }
-
-
 @media screen and (max-width:767px){
     
     .part{
@@ -424,15 +409,11 @@ footer {
     align-self: center;
     width: 300px;
 }
-
 }
-
 </style>
 </head>
 <body>
-
     <div class="header">
-     
     <nav class="navbar navbar-style">
         <div class="container-fluid">
           <div class="navbar-header">
@@ -441,13 +422,13 @@ footer {
           </div>
           <div class="collapse navbar-collapse" id="micon">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="home.html">Home</a></li>
-              <li><a href="login.html">Login</a></li>
-              <li><a href="plan.html">Plans</a></li>
+              <li><a href="home.php">Home</a></li>
+              <li><a href="login.php">Login</a></li>
+              <li><a href="plan.php">Plans</a></li>
               <li><a href="payment.html">Payment</a></li>
               <li><a href="contact.html">Contact</a></li>
               <li><a  onclick="openM()">Meter</a></li>
-              <li><a href="about.html">About</a></li>
+              <li><a href="profile.php">Profile</a></li>
           </ul>
           </div>
         </div>
@@ -508,7 +489,6 @@ footer {
             </p>
             </div>
         </div>
-    
         <footer>
             <div class="container">
               <div class="row">

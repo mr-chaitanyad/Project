@@ -1,0 +1,171 @@
+
+body {
+    background: url(fibre.jpg);
+    min-height: 300px;
+    background-attachment: fixed;
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-position: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    }
+    .text-box{
+        font-size: 45px;
+        font-weight: 100;
+        margin-top: 240px;
+        margin-left: 40px;
+        color: #000000;
+        border-radius: 5rem;
+        
+    }
+    .text-box h1{
+        padding-left: 1rem;
+        border-left: .5rem solid rgb(255, 255, 255);
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        }
+    .container{
+    width: 500px;
+    background: white;
+    opacity: .9;
+    border: 3px solid #ffffff;
+    border-radius: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+    margin-left: 700px;
+    margin-top: -350px;
+    box-shadow: 0 0  25px 25px rgb(201, 182, 251);
+    }
+    .container h1{
+    margin-left: 60px;
+    padding-top: 20px;
+    margin-top: -45px;
+    align-items: center;
+    }
+    .left{
+    flex-basis: 50%;
+    margin-left: -170px;
+    padding-bottom:10px;
+    padding-top: 20px;
+    
+    }
+    .right{
+    flex-basis: 50%;
+    }
+    .right img{
+    width: 100%;
+    }
+    .right p{
+    text-align: center;
+    margin: auto;
+    max-width: 16rem;
+    }
+    h3{
+    font-size: 20px;
+    color: #2d4336;
+    margin: 1rem 0;
+    }
+    form input[type="email"]{
+    width: 100%;
+    padding: 0.5rem 0.7rem;
+    outline: none;
+    border: 2px solid #b2bec3;
+    border-radius: 5px;
+    }
+    form span{
+    color: rgb(0, 0, 0);
+    width: 100%;
+    font-size: 1rem;
+    }
+    form a{
+    text-decoration: none;
+    font-weight: 100%;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    }
+    form input[type="password"],form input[type="text"]{
+    width: 100%;
+    padding: 0.5rem 0.7rem;
+    outline: none;
+    border: 2px solid #b2bec3;
+    border-radius: 5px;
+    }
+    .b-links{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.5rem;
+    }
+    form input[type="submit"]{
+    background :linear-gradient(135deg, #fbd15d, #0000FF );
+    color: white;
+    padding: 0.5rem 1.3rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    }
+    form input{
+    transition: 0.2s;
+    }
+    form input:focus{
+    border: 2px solid #000000;
+    }
+    #uname{
+    position: relative;
+    
+    }
+    #uname label{
+    position: absolute;
+    right: 0;
+    font-size: 1rem;
+    padding: 0.5rem 0.7rem;
+    }
+    form input[type="submit"]:hover{
+    border:none;
+    }
+    
+    @media  (max-width:770px) {
+    body{
+    overflow-x: hidden;
+    padding: 20px;
+    }
+    .text-box{
+    display: none;
+    }
+    .container{
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 40px;
+    display: block;
+    width: 310px;
+    height: 570px;
+    }
+    .container .left{
+    width: 300px;
+    margin-left: 3px;
+    display: block;
+    }
+    .container .right{
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+    margin-top: 5px;
+    
+    }
+    form input[type="text"]{
+    width:100%;
+    }
+    form input[type="password"]{
+    width:100%;
+    margin: 0.8rem 0;
+    
+    }
+    .b-links{
+    margin-top: 1rem;
+    }
+    }
