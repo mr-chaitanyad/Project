@@ -11,6 +11,7 @@ session_start();
     <!--Navbar CDN BT link--><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <!--Navbar CDN JQ link--><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <!--Navbar CDN BT link--><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <!--Title icon link--><link rel="icon" type="image/x-icon" href="logo.png">
     <style>
 *{
     margin: 0px;
@@ -56,12 +57,13 @@ body{
     font-family: 'Bitter', serif;
     width: 100%;
 }
+
 #a .logo{
-    height: 60px;
+  height: 80px;
 }
-#a .logo:hover{
-    mix-blend-mode:lighten;
-}
+ #a .logo:hover{
+  mix-blend-mode:lighten;
+} 
 .icon-bar{
     background-color: red;
 }

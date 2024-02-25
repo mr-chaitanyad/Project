@@ -10,7 +10,9 @@ session_start();
     <!--Navbar CDN BT link--><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <!--Navbar CDN JQ link--><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <!--Navbar CDN BT link--><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
+  <!--Title icon link--><link rel="icon" type="image/x-icon" href="logo.png">
+  <title>Kanishka Broadband/Plans</title>
+  </head>
 <body>
 <div class="header">
         <nav class="navbar navbar-style">
