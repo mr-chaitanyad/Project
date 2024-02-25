@@ -1,3 +1,3 @@
-🔗**Kanishka Broadband**
-🔗__sponsorship finale year project__
-🔗__Mr. Chaitanya Dinesh Dhayarkar__
+🔗 **Kanishka Broadband**
+🔗 Sponsorship finale year project
+🔗 Mr. Chaitanya Dinesh Dhayarkar
