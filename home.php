@@ -28,6 +28,9 @@ body{
     background-size: cover;
     max-height: 400px;
 }
+::-webkit-scrollbar{
+    display: none;
+}
 #a{
     margin-top: 0px;
     margin-left: 0px;
@@ -290,7 +293,6 @@ a.btn:hover{
 }
 .sec1{
     width: 90%;
-
 }
 .info-container{
     background-color:#DCDCDC;
@@ -430,7 +432,7 @@ footer {
               <li><a href="payment.html">Payment</a></li>
               <li><a href="contact.html">Contact</a></li>
               <li><a  onclick="openM()">Meter</a></li>
-              <li><a href="profile.php">Profile</a></li>
+              <li><a href="profile.php" onclick>Profile</a></li>
           </ul>
           </div>
         </div>
@@ -579,4 +581,8 @@ footer {
         }
         
     });
+    function openM()
+    {
+        window.open('meter1.html','','width=400,height=400,top=200,left=500');
+    }
 </script>

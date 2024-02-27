@@ -318,7 +318,10 @@ html{
   scroll-behavior: smooth;
 }
 body{
-  background-color:rgb(255, 255, 255);
+    background: #0c192c;
+    background-size: cover;
+    max-height: 400px;
+  font-family:Comic Sans MS;
 }
 
 section{
@@ -385,15 +388,17 @@ section{
   display: inline-block;
   margin-top: 1rem;
   padding:.8rem 3rem;
-  background:gray;
-  color:#fff;
   font-size: 1.7rem;
   cursor: pointer;
+  background-color: black;
+    color:white;
+    text-emphasis: none;
+    text-align: center;
 }
 
 .btn:hover{
-color: #fff;
-  background:#333;
+    background-color:#ffffff ;
+    color: red; 
 }
 
 .slider{
@@ -404,6 +409,7 @@ color: #fff;
     overflow: hidden;
     border-radius: 2rem;
     display: flex;
+    box-shadow: 0 5px 10px #000;
 }
 .slider .list{
     position: absolute;
@@ -484,9 +490,9 @@ color: #fff;
 
   .product .heading ,.category .heading{
   font-size: 3rem;
-  color:#444;
+  color:#fff;
   padding-left: 1rem;
-  border-left: .4rem solid gray;
+  border-left: .4rem solid white;
   margin-top: .4rem;
   margin-bottom: .4rem;
 }
@@ -505,12 +511,13 @@ overflow-x:scroll;
 margin: 10px;
   border-radius: 2rem;
   border:.1rem solid rgba(0,0,0,.3);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    box-shadow: 0 5px 10px #000;
   text-align: center;
   position: relative;
   height: 500px;
   flex-direction: column;
   scroll-snap-align: start;
+  background: white;
 
 }
 .product .box-container::-webkit-scrollbar{
@@ -553,7 +560,7 @@ border-radius: 92px;
   border-radius: 5rem;
   padding:.5rem;
   display: none;
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    box-shadow: 0 5px 10px #000;
 }
 
 .product .box-container .box:hover .icons{
@@ -640,13 +647,11 @@ overflow-x:scroll;
 .category .box-container .box{
   height: 30rem;
   overflow: hidden;
-  border:.1rem solid rgba(0,0,0,.3);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     width: 200px;
   flex: 0 0 350px;
   border-radius: 2rem;
   border:.1rem solid rgba(0,0,0,.3);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    box-shadow: 0 5px 10px #000;
   text-align: center;
   position: relative;
   flex-direction: column;
@@ -726,11 +731,10 @@ section{
 .product .box-container .box{
   overflow: hidden;
   border:.1rem solid rgba(0,0,0,.3);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    box-shadow: 0 5px 10px #000;
   flex: 0 0 350px;
   border-radius: 2rem;
   border:.1rem solid rgba(0,0,0,.3);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
   text-align: center;
   max-width: 300px;
   height: 400px;
@@ -912,24 +916,59 @@ function buy(val,id)
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='buy.css'>
+    <style>
+    /* Add your CSS styles here */
+        body {
+  font-family:Comic Sans MS;
+        }
+        form {
+            width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 15px;
+        }
+    .btn{
+        margin: 20px;
+  font-family:Comic Sans MS;
+        width: 160px;
+        padding: 10px;
+        border-radius: 50px;
+        font-size: 20px; 
+        border:none;
+        background-color: black;
+            color:white;
+            text-emphasis: none;
+            text-align: center;
+        }
+        .btn:hover{
+        background-color:#ffffff ;
+            color: red; 
+        }
+</style>
 </head>
 <body>
     <h1>Request to Add plan</h1>
-    <form action="submit_message.php" method="post">
+    <form action="https://formsubmit.co/3db559f1c05ee69b2d185c55661a3524" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name"  value="<?php if(isset($_SESSION['uname']))echo $_SESSION['uname']; else exit();?>" required>
 
         <label for="email">Plan ID:</label>
-        <input type="email" id="email" value=${id} disabled=true name="email" required>
+        <input type="email" id="email" value=${id} readonly name="email" required>
 
         <label for="subject">Subject:</label>
-        <input type="text" id="subject" value="Add Plan" disabled=true  name="subject">
+        <input type="text" id="subject" value="Add Plan" readonly  name="subject">
 
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="4" required></textarea>
 
-        <input type="submit" value="Send Message">
+        <input type="submit" class="btn" value="Send Message">
     </form>
 </body>
 </html>`);
@@ -941,24 +980,59 @@ function buy(val,id)
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='buy.css'>
+    <style>
+    /* Add your CSS styles here */
+        body {
+  font-family:Comic Sans MS;
+        }
+        form {
+            width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 15px;
+        }
+    .btn{
+        margin: 20px;
+        width: 160px;
+  font-family:Comic Sans MS;
+        padding: 10px;
+        border-radius: 50px;
+        font-size: 20px; 
+        border:none;
+        background-color: black;
+            color:white;
+            text-emphasis: none;
+            text-align: center;
+        }
+        .btn:hover{
+        background-color:#ffffff ;
+            color: red; 
+        }
+</style>
 </head>
 <body>
     <h1>Request to Add plan</h1>
-    <form action="submit_message.php" method="post">
+    <form action="https://formsubmit.co/3db559f1c05ee69b2d185c55661a3524" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name"  value="<?php if(isset($_SESSION['uname']))echo $_SESSION['uname']; else exit();?>" required>
 
         <label for="email">Plan ID:</label>
-        <input type="email" id="email" value=${id} disabled=true name="email" required>
+        <input type="email" id="email" value=${id} readonly name="email" required>
 
         <label for="subject">Subject:</label>
-        <input type="text" id="subject" value="Add Plan" disabled=true  name="subject">
+        <input type="text" id="subject" value="Add Plan" readonly  name="subject">
 
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="4" required></textarea>
 
-        <input type="submit" value="Send Message">
+        <input type="submit" class="btn" value="Send Message">
     </form>
 </body>
 </html>`);
@@ -970,24 +1044,59 @@ function buy(val,id)
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='buy.css'>
+    <style>
+    /* Add your CSS styles here */
+        body {
+  font-family:Comic Sans MS;
+        }
+        form {
+            width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 15px;
+        }
+    .btn{
+        margin: 20px;
+        width: 160px;
+        padding: 10px;
+  font-family:Comic Sans MS;
+        border-radius: 50px;
+        font-size: 20px; 
+        border:none;
+        background-color: black;
+            color:white;
+            text-emphasis: none;
+            text-align: center;
+        }
+        .btn:hover{
+        background-color:#ffffff ;
+            color: red; 
+        }
+</style>
 </head>
 <body>
     <h1>Request to Add plan</h1>
-    <form action="submit_message.php" method="post">
+    <form action="https://formsubmit.co/3db559f1c05ee69b2d185c55661a3524" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name"  value="<?php if(isset($_SESSION['uname']))echo $_SESSION['uname']; else exit();?>" required>
 
         <label for="email">Plan ID:</label>
-        <input type="email" id="email" value=${id} disabled=true name="email" required>
+        <input type="email" id="email" value=${id} readonly name="email" required>
 
         <label for="subject">Subject:</label>
-        <input type="text" id="subject" value="Add Plan" disabled=true  name="subject">
+        <input type="text" id="subject" value="Add Plan" readonly  name="subject">
 
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="4" required></textarea>
 
-        <input type="submit" value="Send Message">
+        <input type="submit" class="btn" value="Send Message">
     </form>
 </body>
 </html>`);
@@ -999,24 +1108,59 @@ function buy(val,id)
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='buy.css'>
+    <style>
+    /* Add your CSS styles here */
+        body {
+  font-family:Comic Sans MS;
+        }
+        form {
+            width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 15px;
+        }
+    .btn{
+  font-family:Comic Sans MS;
+        margin: 20px;
+        width: 160px;
+        padding: 10px;
+        border-radius: 50px;
+        font-size: 20px; 
+        border:none;
+        background-color: black;
+            color:white;
+            text-emphasis: none;
+            text-align: center;
+        }
+        .btn:hover{
+        background-color:#ffffff ;
+            color: red; 
+        }
+</style>
 </head>
 <body>
-    <h1>Request to Add plan</h1>
-    <form action="submit_message.php" method="post">
+    <h1>Request to Add plan</h1>  
+    <form action="https://formsubmit.co/3db559f1c05ee69b2d185c55661a3524" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name"  value="<?php if(isset($_SESSION['uname']))echo $_SESSION['uname']; else exit();?>" required>
 
         <label for="email">Plan ID:</label>
-        <input type="email" id="email" value=${id} disabled=true name="email" required>
+        <input type="email" id="email" value=${id} readonly name="email" required>
 
         <label for="subject">Subject:</label>
-        <input type="text" id="subject" value="Add Plan" disabled=true  name="subject">
+        <input type="text" id="subject" value="Add Plan" readonly  name="subject">
 
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="4" required></textarea>
 
-        <input type="submit" value="Send Message">
+        <input type="submit"class="btn" value="Send Message">
     </form>
 </body>
 </html>`);
@@ -1028,24 +1172,59 @@ function buy(val,id)
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='buy.css'>
+    <<style>
+    /* Add your CSS styles here */
+        body {
+  font-family:Comic Sans MS;
+        }
+        form {
+            width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 15px;
+        }
+    .btn{
+        margin: 20px;
+  font-family:Comic Sans MS;
+        width: 160px;
+        padding: 10px;
+        border-radius: 50px;
+        font-size: 20px; 
+        border:none;
+        background-color: black;
+            color:white;
+            text-emphasis: none;
+            text-align: center;
+        }
+        .btn:hover{
+        background-color:#ffffff ;
+            color: red; 
+        }
+</style>
 </head>
 <body>
     <h1>Request to Add plan</h1>
-    <form action="submit_message.php" method="post">
+    <form action="https://formsubmit.co/3db559f1c05ee69b2d185c55661a3524" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name"  value="<?php if(isset($_SESSION['uname']))echo $_SESSION['uname']; else exit();?>" required>
 
         <label for="email">Plan ID:</label>
-        <input type="email" id="email" value=${id} disabled=true name="email" required>
+        <input type="email" id="email" value=${id} readonly name="email" required>
 
         <label for="subject">Subject:</label>
-        <input type="text" id="subject" value="Add Plan" disabled=true  name="subject">
+        <input type="text" id="subject" value="Add Plan" readonly  name="subject">
 
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="4" required></textarea>
 
-        <input type="submit" value="Send Message">
+        <input type="submit" class="btn" value="Send Message">
     </form>
 </body>
 </html>`);
@@ -1057,28 +1236,67 @@ function buy(val,id)
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='buy.css'>
+    <style>
+    /* Add your CSS styles here */
+        body {
+  font-family:Comic Sans MS;
+        }
+        form {
+            width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 15px;
+        }
+    .btn{
+        margin: 20px;
+  font-family:Comic Sans MS;
+        width: 160px;
+        padding: 10px;
+        border-radius: 50px;
+        font-size: 20px; 
+        border:none;
+        background-color: black;
+            color:white;
+            text-emphasis: none;
+            text-align: center;
+        }
+        .btn:hover{
+        background-color:#ffffff ;
+            color: red; 
+        }
+</style>
 </head>
 <body>
     <h1>Request to Add plan</h1>
-    <form action="submit_message.php" method="post">
+    <form action="https://formsubmit.co/3db559f1c05ee69b2d185c55661a3524" method="post">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name"  value="<?php if(isset($_SESSION['uname']))echo $_SESSION['uname']; else exit();?>" required>
+        <input type="text" id="name" name="Name"  value="<?php if(isset($_SESSION['uname']))echo $_SESSION['uname']; else exit();?>" required>
 
         <label for="email">Plan ID:</label>
-        <input type="email" id="email" value=${id} disabled=true name="email" required>
+        <input type="email" id="email" value=${id} readonly name="Plan ID" required>
 
         <label for="subject">Subject:</label>
-        <input type="text" id="subject" value="Add Plan" disabled=true  name="subject">
+        <input type="text" id="subject" value="Add Plan" readonly  name="Subject">
 
         <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+        <textarea id="message" name="Message" rows="4" required></textarea>
 
-        <input type="submit" value="Send Message">
+        <input type="submit" class="btn" value="Send Message">
     </form>
 </body>
 </html>`);
   }
+}
+function openM()
+{
+    window.open('meter1.html','','width=400,height=400,top=200,left=500');
 }
     </script>
     </html>

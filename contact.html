@@ -29,7 +29,7 @@ error_reporting(0);
               <li><a href="plan.php">Plans</a></li>
               <li><a href="payment.html">Payment</a></li>
               <li><a href="contact.html">Contact</a></li>
-              <li><a onclick="window.open('meter1.html','','width=500','height=500')">Meter</a></li>
+              <li><a onclick="openM()">Meter</a></li>
               <li><a href="profile.php">Profile</a></li>
             </ul>
             </div>
@@ -72,7 +72,7 @@ error_reporting(0);
         </div>
         <!--Navbox-->
         <section>
-        <div class="container">
+        <div class="container con">
           <div class="outer">
             <div class="inner">
               <img src="chat.png" width="20px"><b>CHAT</b>
@@ -178,11 +178,14 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color:rgb(255, 255, 255);    
-    font-family:Comic Sans MS;
-
+    background: #0c192c;
+    background-size: cover;
+    max-height: 400px;  
+    font-family:Comic Sans MS;   
 }
-
+::-webkit-scrollbar{
+    display: none;
+}
 .header{
     height:100vh;
 }
@@ -194,19 +197,20 @@ body{
     font-size: 3rem;
     padding: 10px;
 }
-.navbar-style{
-    box-shadow: 0 5px 10px #ffffff;
-    border:0px;
-    border-radius: 0px;
-}
+
 .navbar{
     backface-visibility: initial;
+    background-image: url(logo.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #000000;
-    font-family:Comic Sans MS;
+    font-family: 'Bitter', serif;
+    width: 100%;
 }
+.text-center{
+  color: white;
 
+}
  #a .logo{
   height: 80px;
 }
@@ -229,25 +233,22 @@ li a:hover{
 .nav{
     padding: 10px;
 }
-
-a.btn{
+.btn{
   margin: 20px;
-  width: 130px;
-  padding: 20px;
-  border-radius: 50px;
-  font-size: 16px;
-}
-a.btn-first{
-  position:relative;
-  top:50%;
+  width: 110px;
+  padding: 10px;
+  border-radius: 1rem;
+  font-size: 20px;
+  border: none;
   background-color: black;
-  color:white;
-  text-emphasis: none;
-  text-align: center;
+    color:white;
+    text-emphasis: none;
+    text-align: center;
 }
-a.btn:hover{
-  background-color: white ;
-  color: red;  
+.btn:hover{
+  
+  background-color:#ffffff ;
+    color: red; 
 }
 .row p{
   font-size: large;
@@ -256,6 +257,16 @@ section{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.glyphicon{
+  color: white;
+}
+p{
+  color: white;
+}
+.con{
+  color:#DCDCDC;
+  padding: 10px;
 }
 .container{
   margin: 40px;
@@ -270,10 +281,14 @@ section{
   justify-content: center;
 }
 .inner{
-  background: #CFD2CF;
+  background: #DCDCDC;
   height: 100px;
   padding: 20px;
-  box-shadow: 12px 12px 22px 12px grey;
+    box-shadow: 0 5px 10px #000;
+  border-radius: 2rem;
+}
+.inner p{
+  color: black;
 }
 .outer button{
   float: right;
@@ -350,7 +365,7 @@ h2::before{
 footer {
     font-family: Comic Sans MS;
 	background: #000000;
-	padding: 38.4px 0;
+	padding: 38.4px 160px;
 }
 .single-box img{
 	text-align: center;
@@ -396,6 +411,9 @@ footer {
     padding: 0px 0px;
     font-size: 14px;
   }
+  footer{
+    padding: 0px;
+  }
     #single-box{
         display: flex;
     }
@@ -414,4 +432,10 @@ footer {
 }
 }
   </style>
+  <script>
+    function openM()
+    {
+        window.open('meter1.html','','width=400,height=400,top=200,left=500');
+    }
+  </script>
 </html>

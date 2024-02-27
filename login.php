@@ -46,8 +46,8 @@
                     </p>
                 </div>
             </div>
-
-        </header>     
+            
+        </header>  
     </body>
 </html>
 <?php
@@ -61,9 +61,12 @@
     if ($result->num_rows>0) 
     {
         session_start();
+        echo "<script>alert('Login Successfully');</script>";
         $_SESSION['uname'] = $email;
         header("Location:plan.php");
-        exit();
+    }
+    else{
+        echo "<script>alert('No user exists');</script>";
     }
 }
 ?>
