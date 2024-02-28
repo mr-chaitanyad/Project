@@ -429,7 +429,6 @@ footer {
               <li><a href="home.php">Home</a></li>
               <li><a href="login.php">Login</a></li>
               <li><a href="plan.php">Plans</a></li>
-              <li><a href="payment.html">Payment</a></li>
               <li><a href="contact.html">Contact</a></li>
               <li><a  onclick="openM()">Meter</a></li>
               <li><a href="profile.php" onclick>Profile</a></li>
@@ -453,8 +452,8 @@ footer {
                 <h1 class="text1">Welcome To</h1>
                   <p class="text2">Kanishka Broadband</p>
                 <h3 class="text3">easy to surfing.....</h3>
-                  <a class="btn btn-first" href="Services.php">Services</a>
-                  <a class="btn btn-first" href="ContactUs.php">Contact Us</a>
+                  <a class="btn btn-first" href="plan.php">Plans</a>
+                  <a class="btn btn-first" href="contact.html">Contact Us</a>
               </div>
               <div class="col-sm-6 col-md-6 col-lg-6">  
                 <div class="card">
@@ -583,6 +582,6 @@ footer {
     });
     function openM()
     {
-        window.open('meter1.html','','width=400,height=400,top=200,left=500');
+        window.open('meter1.html','Speed Meter','width=400,height=400,top=200,left=500');
     }
 </script>

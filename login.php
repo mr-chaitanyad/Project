@@ -1,6 +1,8 @@
 <html>
     <head>
         <link rel="stylesheet" href="login.css">
+        <title>Kanishka Broadband/Login</title>
+        <link rel="icon" type="image/x-icon" href="logo.png">
     </head>
     <body>
         <div class="text-box">

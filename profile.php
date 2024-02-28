@@ -3,6 +3,9 @@ session_start();
 ?>
 <html>
     <head>
+        
+    <title>Kanishka Broadband/Profile</title>
+        <link rel="icon" type="image/x-icon" href="logo.png">
         <style>
             body{
                 padding-top: 70px;

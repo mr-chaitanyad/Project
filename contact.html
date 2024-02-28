@@ -27,7 +27,6 @@ error_reporting(0);
               <li><a href="home.php">Home</a></li>
               <li><a href="login.php">Login</a></li>
               <li><a href="plan.php">Plans</a></li>
-              <li><a href="payment.html">Payment</a></li>
               <li><a href="contact.html">Contact</a></li>
               <li><a onclick="openM()">Meter</a></li>
               <li><a href="profile.php">Profile</a></li>
@@ -76,11 +75,11 @@ error_reporting(0);
           <div class="outer">
             <div class="inner">
               <img src="chat.png" width="20px"><b>CHAT</b>
-              <p>Typical Reply time within seconds<button>Click Here</button><br>Monday-Friday 10pm-4pm IST</p>
+              <p>Typical Reply time within seconds<a href="http:wa.me/+919594242427">Click Here</a><br>Monday-Friday 10pm-4pm IST</p>
             </div><br>
             <div class="inner">
               <img src="faq.png" width="20px"><b>FAQ</b>
-              <p>Got questions? We've got answers<button>Click Here</button></p>
+              <p>Got questions? We've got answers<a href="http:wa.me/+919594242427">Click Here</a></p>
             </div>
           </div>
         </div>
@@ -290,7 +289,7 @@ p{
 .inner p{
   color: black;
 }
-.outer button{
+.outer a{
   float: right;
   background-color: #000000;
   color: white;
@@ -298,8 +297,9 @@ p{
   border-radius: 10px;
   margin-right: 5px;
   margin-left: 20px;
+  text-decoration:none;
 }
-.outer button:hover{
+.outer a:hover{
   background-color: white;
   color: red;
   border: white;

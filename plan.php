@@ -26,9 +26,8 @@ session_start();
                 <li><a href="home.php">Home</a></li>
               <li><a href="login.php">Login</a></li>
               <li><a href="plan.php">Plans</a></li>
-              <li><a href="payment.html">Payment</a></li>
               <li><a href="contact.html">Contact</a></li>
-              <li><a  onclick="openM()">Meter</a></li>
+              <li><a  href="meter1.html">Meter</a></li>
               <li><a href="profile.php">Profile</a></li>
             </ul>
             </div>
@@ -77,7 +76,7 @@ session_start();
 <ul class="box-container">
 
     <li class="box">
-        <span class="discount">30 Mbps + 13 OTT APPS</span>
+        <span class="discount">10 Mbps + 13 OTT APPS</span>
         <div class="icons">
             <a href="#" class="fas fa-heart"></a>
             <a href="#" class="fas fa-share"></a>
@@ -97,7 +96,7 @@ session_start();
       </li>
 
     <li class="box">
-      <span class="discount">30 Mbps + 13 OTT APPS</span>
+      <span class="discount">25 Mbps + 13 OTT APPS</span>
         <div class="icons">
             <a href="#" class="fas fa-heart"></a>
             <a href="#" class="fas fa-share"></a>
@@ -135,7 +134,7 @@ session_start();
       </li>
 
     <li class="box">
-      <span class="discount">30 Mbps + 13 OTT APPS</span>
+      <span class="discount">50 Mbps + 13 OTT APPS</span>
         <div class="icons">
             <a href="#" class="fas fa-heart"></a>
             <a href="#" class="fas fa-share"></a>
@@ -154,7 +153,7 @@ session_start();
       </li>
 
     <li class="box">
-      <span class="discount">30 Mbps + 13 OTT APPS</span>
+      <span class="discount">100 Mbps + 13 OTT APPS</span>
         <div class="icons">
             <a href="#" class="fas fa-heart"></a>
             <a href="#" class="fas fa-share"></a>
@@ -173,7 +172,7 @@ session_start();
       </li>
 
     <li class="box">
-      <span class="discount">30 Mbps + 13 OTT APPS</span>
+      <span class="discount">200 Mbps + 13 OTT APPS</span>
         <div class="icons">
             <a href="#" class="fas fa-heart"></a>
             <a href="#" class="fas fa-share"></a>
@@ -204,31 +203,33 @@ session_start();
     <ul class="box-container">
     
         <li class="box">
-            <img src="img1.jpeg" alt="">
+            <img src="router1.jpg" alt="">
             <div class="content">
                 <h3>100 Mbps</h3>
-                <a href="#" class="btn">shop now</a>
+                <p>A 100 Mbps router is a Wi-Fi device that allows multiple devices to connect and share data at a speed of 100 Mbps, supporting activities like streaming, gaming, and video calls.</p>
             </div>
           </li>
         <li class="box">
-            <img src="images/r2.png" alt="">
+            <img src="router2.jpg" alt="">
             <div class="content">
                 <h3>500 Mbps</h3>
-                <a href="#" class="btn">shop now</a>
+                <p>A 500 Mbps router is a fast Wi-Fi device, supporting 500 Mbps speed for smooth multi-device usage, high-quality streaming, gaming, and video calls.</p>
             </div>
           </li>
         <li class="box">
-            <img src="images/cat3.jpg" alt="">
+            <img src="router3.jpg" alt="">
             <div class="content">
                 <h3>1000 Mbps</h3>
-                <a href="#" class="btn">shop now</a>
+                <p>A 1000 Mbps router is a high-speed wireless device for internet access and multi-device connectivity, offering faster data transfer and improved online experiences.</p>
             </div>
           </li>
         <li class="box">
-            <img src="images/cat4.jpg" alt="">
+            <img src="router4.jpg" alt="">
             <div class="content">
                 <h3>200 Mbps</h3>
-                <a href="#" class="btn" target="">shop now</a>
+                <p>A 200 Mbps router is a wireless device for internet access, enabling multiple devices to connect and share the internet........................
+
+                </p>
             </div>
           </li>
     
@@ -680,7 +681,7 @@ border-radius: 92px;
 
 .category .box-container .box .content{
   position: absolute;
-  bottom: -7rem;
+  bottom: -9rem;
   background: #f7f7f7;
   border-top:.1rem solid rgba(0,0,0,.3);
   text-align: center;
@@ -959,8 +960,8 @@ function buy(val,id)
         <label for="name">Name:</label>
         <input type="text" id="name" name="name"  value="<?php if(isset($_SESSION['uname']))echo $_SESSION['uname']; else exit();?>" required>
 
-        <label for="email">Plan ID:</label>
-        <input type="email" id="email" value=${id} readonly name="email" required>
+        <label for="plan">Plan ID:</label>
+        <input type="text" id="plan" value=${id} readonly name="Plan ID" required>
 
         <label for="subject">Subject:</label>
         <input type="text" id="subject" value="Add Plan" readonly  name="subject">
@@ -1023,8 +1024,8 @@ function buy(val,id)
         <label for="name">Name:</label>
         <input type="text" id="name" name="name"  value="<?php if(isset($_SESSION['uname']))echo $_SESSION['uname']; else exit();?>" required>
 
-        <label for="email">Plan ID:</label>
-        <input type="email" id="email" value=${id} readonly name="email" required>
+        <label for="plan">Plan ID:</label>
+        <input type="text" id="plan" value=${id} readonly name="Plan ID" required>
 
         <label for="subject">Subject:</label>
         <input type="text" id="subject" value="Add Plan" readonly  name="subject">
@@ -1087,8 +1088,8 @@ function buy(val,id)
         <label for="name">Name:</label>
         <input type="text" id="name" name="name"  value="<?php if(isset($_SESSION['uname']))echo $_SESSION['uname']; else exit();?>" required>
 
-        <label for="email">Plan ID:</label>
-        <input type="email" id="email" value=${id} readonly name="email" required>
+        <label for="plan">Plan ID:</label>
+        <input type="text" id="plan" value=${id} readonly name="Plan ID" required>
 
         <label for="subject">Subject:</label>
         <input type="text" id="subject" value="Add Plan" readonly  name="subject">
@@ -1151,8 +1152,8 @@ function buy(val,id)
         <label for="name">Name:</label>
         <input type="text" id="name" name="name"  value="<?php if(isset($_SESSION['uname']))echo $_SESSION['uname']; else exit();?>" required>
 
-        <label for="email">Plan ID:</label>
-        <input type="email" id="email" value=${id} readonly name="email" required>
+        <label for="plan">Plan ID:</label>
+        <input type="text" id="plan" value=${id} readonly name="Plan ID" required>
 
         <label for="subject">Subject:</label>
         <input type="text" id="subject" value="Add Plan" readonly  name="subject">
@@ -1215,8 +1216,8 @@ function buy(val,id)
         <label for="name">Name:</label>
         <input type="text" id="name" name="name"  value="<?php if(isset($_SESSION['uname']))echo $_SESSION['uname']; else exit();?>" required>
 
-        <label for="email">Plan ID:</label>
-        <input type="email" id="email" value=${id} readonly name="email" required>
+        <label for="plan">Plan ID:</label>
+        <input type="text" id="plan" value=${id} readonly name="Plan ID" required>
 
         <label for="subject">Subject:</label>
         <input type="text" id="subject" value="Add Plan" readonly  name="subject">
@@ -1279,8 +1280,8 @@ function buy(val,id)
         <label for="name">Name:</label>
         <input type="text" id="name" name="Name"  value="<?php if(isset($_SESSION['uname']))echo $_SESSION['uname']; else exit();?>" required>
 
-        <label for="email">Plan ID:</label>
-        <input type="email" id="email" value=${id} readonly name="Plan ID" required>
+        <label for="plan">Plan ID:</label>
+        <input type="text" id="plan" value=${id} readonly name="Plan ID" required>
 
         <label for="subject">Subject:</label>
         <input type="text" id="subject" value="Add Plan" readonly  name="Subject">
@@ -1296,7 +1297,7 @@ function buy(val,id)
 }
 function openM()
 {
-    window.open('meter1.html','','width=400,height=400,top=200,left=500');
+    window.open('meter1.html','Speed Meter','width=400,height=400,top=200,left=500');
 }
     </script>
     </html>
