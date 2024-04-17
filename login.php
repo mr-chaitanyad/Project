@@ -27,7 +27,7 @@
                             <br>
                             <a href="#" >Use my cuurent email address instead</a>
                             <input type="password" id="t2" name="pass" placeholder="Password"
-                            required id="pwrd">
+                            required>
                             <span>
                                 Use 8 or more character with a mix of letters, numbers & symbols.
                             </span>
@@ -51,6 +51,15 @@
             
         </header>  
     </body>
+    <script>
+        function show()
+        {
+            
+        var c1= document.getElementById("c1");
+        if(c1.checked)
+        document.getElementById("t2").type="text";
+        }
+        </script>
 </html>
 <?php
     include 'db.php';
