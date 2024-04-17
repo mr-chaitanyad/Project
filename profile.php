@@ -118,9 +118,12 @@ session_start();
                 </div>
                 <div class="info">
                     <br><br>
-                    <span>Name:</span><strong><?php echo $_SESSION['uname'];?></strong><br><br>
+                    <span>Name:</span><strong><?php 
+                        if(isset($_SESSION["uname"]))echo $_SESSION['uname'];?></strong><br><br>
                     <span>Username: </span><strong>
                         <?php 
+                        if(isset($_SESSION["uname"]))
+                        {
                         include "db.php"; 
                         $sql = "SELECT * FROM logers WHERE uname = ?";
                         $stmt = $conn->prepare($sql);
@@ -159,11 +162,11 @@ session_start();
                         $logers = $result->fetch_assoc();
                         echo $logers['phone'];
                         } 
+                    }
                         ?>
                     </strong>
                 </div>
                 <a id="btn" href="logout.php">Logout</a>
-                <a id="btn">Update</a>
             </div>
         </div>
     </body>
